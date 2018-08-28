@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/august-festival/boiled-egg/issues"
   },
-  "homepage": "https://github.com/august-festival/boiled-egg#readme"
+  "homepage": "https://github.com/august-festival/boiled-egg#readme",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.16.3",
+    "morgan": "~1.8.1",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "~2.4.2",
+    "express-graphql": "^0.6.12",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "passport": "^0.4.0",
+    "sequelize": "^4.38.0"
+  }
 }
