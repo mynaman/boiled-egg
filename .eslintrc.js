@@ -7,7 +7,7 @@ module.exports = {
         "semi": ["error", "always"],
         "no-debugger": "error",
         "no-console": ["error", {"allow": ["log", "error"]}],
-        "brace-style": "error"
-
+        "brace-style": "error",
+        "arrow-parens": ["error", "as-needed"]
     }
 };
