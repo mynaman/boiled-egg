@@ -8,3 +8,6 @@
     * error middleware
         * 
         * [에러 처리를 위한 익스프레스 가이드](http://blog.jeonghwan.net/node/2017/08/17/express-error-handling.html)
+* style guide
+    * [js hint](http://jshint.com/docs/options/)
+    * [eslint](https://eslint.org/docs/rules/)
