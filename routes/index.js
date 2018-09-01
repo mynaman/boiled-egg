@@ -5,7 +5,7 @@ const router = express.Router();
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
-    res.render("index", { title: "Express" });
+    res.render("index", { title: "Boiled Egg" });
 });
 router.get("/user/:id", (req, res, next) => {
 // if the user ID is 0, skip to the next route
