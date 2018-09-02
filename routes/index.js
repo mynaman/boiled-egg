@@ -1,5 +1,6 @@
 const express = require("express");
 const model = require("../models/");
+console.log('router', process.env.NODE_ENV);
 
 const router = express.Router();
 
