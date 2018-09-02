@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha $(find ./test/ -name '*.spec.js') --recursive",
+    "devel-start": "node ./bin/www ; # init database default env",
     "start": "node ./bin/www"
   },
   "repository": {
