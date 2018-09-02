@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+if (typeof(process.env.NODE_ENV) == "undefined") {
+    process.env.NODE_ENV = "test";
+}
+console.log(process.env.NODE_ENV);
 /**
  * Module dependencies.
  */
