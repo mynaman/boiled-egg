@@ -21,5 +21,11 @@ sqlite: 10.9.0
 * `.eslintrc.js`, `.jshintrc` 파일 참조
 * 추가하고 싶은 가이드는 slack으로 공유 :D
     * 가이드 추가한 사람이 고쳐주기
+#### test
+* test framework : mocha
+* 테스트 수행 : `npm test`
+* 테스트 파일 위치 : &lt;Document Root&gt;/test/
+* 테스트 파일 prefix : XXX.spec.js
+
 #### env
 node : 10.9.0
