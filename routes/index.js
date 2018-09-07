@@ -1,27 +1,29 @@
 const express = require("express");
 const model = require("../models/");
-console.log('router', process.env.NODE_ENV);
 
 const router = express.Router();
 
 /* GET home page. */
 router.get("/", (req, res, next) => {
-    res.render("index", { title: "Boiled Egg" });
-});
-router.get("/user/:id", (req, res, next) => {
-// if the user ID is 0, skip to the next route
-    if (req.params.id == 0) next("route");
-    // otherwise pass the control to the next middleware function in this stack
-    else next(); //
-}, (req, res, next) => {
-// render a regular page
-    res.render("regular");
+    const sess = req.session;
+    console.log(sess);
+    res.send('index');
 });
 
-// handler for the /user/:id path, which renders a special page
-router.get("/user/:id", (req, res, next) => {
-    res.render("special");
+router.get("/login", (req, res, next) => {
+    const sess = req.session;
+    sess.username = "parkwonseck";
+    console.log(req.session);        
+    res.send('login');
 });
 
+router.get("/logout", (req, res, next) => {
+    console.log(req.session);
+    req.session.destroy(() =>{         
+        console.log(req.session);
+        res.send('logout');
+    });
+    
+});
 
 module.exports = router;
